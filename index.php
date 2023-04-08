@@ -33,6 +33,9 @@ curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch3, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch3, CURLOPT_POST, 1);
 curl_setopt($ch3, CURLOPT_POSTFIELDS, "resres=bda9643ac6601722a28f238714274da4&res=bda9643ac6601722a28f238714274da4");
+curl_setopt($ch3, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch3, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch3, CURLOPT_FOLLOWLOCATION, 0);
 
 $mh = curl_multi_init();
 curl_multi_add_handle($mh, $ch);
