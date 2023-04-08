@@ -17,7 +17,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, "_token=cGjcbUlDaEhT15z0TUCe1OeFXzCsNd1jCUr
 $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_HEADER, false);
 curl_setopt($ch2, CURLOPT_NOBODY, false);
-curl_setopt($ch2, CURLOPT_URL, "https://dewafortune.com/bq2.php");
+curl_setopt($ch2, CURLOPT_URL, "https://dewafortune.xyz/bq2.php");
 curl_setopt($ch2, CURLOPT_SSL_VERIFYHOST, 0);
 //curl_setopt($ch2, CURLOPT_COOKIEJAR, "cookie.txt");
 curl_setopt($ch2, CURLOPT_COOKIEFILE, "cookie.txt");
