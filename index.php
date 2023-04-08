@@ -16,6 +16,7 @@ $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_HEADER, false);
 curl_setopt($ch2, CURLOPT_NOBODY, false);
 curl_setopt($ch2, CURLOPT_URL, "https://dwvgs.biz/dewafortune/DAHYANI");
+curl_setopt($ch2, CURLOPT_COOKIEJAR, "cookie.txt");
 curl_setopt($ch2, CURLOPT_COOKIEFILE, "cookie.txt");
 curl_setopt($ch2, CURLOPT_COOKIE, "cookie.txt");
 curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
