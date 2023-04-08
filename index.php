@@ -18,6 +18,7 @@ curl_setopt($ch2, CURLOPT_HEADER, false);
 curl_setopt($ch2, CURLOPT_NOBODY, false);
 curl_setopt($ch2, CURLOPT_URL, "https://dewafortune.xyz//auth/select_game_v2.php");
 curl_setopt($ch2, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_COOKIEJAR, "cookie.txt");
 curl_setopt($ch2, CURLOPT_COOKIEFILE, "cookie.txt");
 curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
