@@ -54,5 +54,5 @@ curl_multi_remove_handle($mh, $ch2);
 curl_multi_remove_handle($mh, $ch3);
 curl_multi_close($mh);
 echo $a;
-echo $b;
+//echo $b;
 echo $c;
