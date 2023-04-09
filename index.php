@@ -55,7 +55,7 @@ curl_setopt($ch5, CURLOPT_COOKIEFILE, "cookie1.txt");
 curl_setopt($ch5, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch5, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch5, CURLOPT_POST, 1);
-curl_setopt($ch5, CURLOPT_POSTFIELDS, "resres=bda9643ac6601722a28f238714274da4&res=bda9643ac6601722a28f238714274da4");
+curl_setopt($ch5, CURLOPT_POSTFIELDS, "resres=76ufi2dcekjt6c3mldamhh1eci&res=76ufi2dcekjt6c3mldamhh1eci");
 curl_setopt($ch5, CURLOPT_VERBOSE, 1);
 curl_setopt($ch5, CURLOPT_FOLLOWLOCATION, 1);
 $cnt = curl_exec($ch5);
