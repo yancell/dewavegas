@@ -27,8 +27,6 @@ curl_close($ch2);
 echo $info."\n-----\n";
 
 $ch3 = curl_init();
-curl_setopt($ch2, CURLOPT_HEADER, 1);
-curl_setopt($ch2, CURLOPT_NOBODY, 1);
 curl_setopt($ch3, CURLOPT_URL, $info);
 curl_setopt($ch3, CURLOPT_COOKIEJAR, "cookie1.txt");
 curl_setopt($ch3, CURLOPT_COOKIEFILE, "cookie1.txt");
