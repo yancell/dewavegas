@@ -41,8 +41,8 @@ curl_setopt($ch3, CURLOPT_FOLLOWLOCATION, 0);
 curl_setopt($ch3, CURLOPT_VERBOSE, 1);
 **/
 $ch4 = curl_init();
-curl_setopt($ch4, CURLOPT_HEADER, 1);
-curl_setopt($ch4, CURLOPT_NOBODY, 1);
+curl_setopt($ch4, CURLOPT_HEADER, 0);
+curl_setopt($ch4, CURLOPT_NOBODY, 0);
 curl_setopt($ch4, CURLOPT_URL, "https://dewafortune.xyz/auth/login_defor.php?userid=DAHYANI&sessid=dqf7JfTEW5W5X7hfXquqZBFzQifVfXFIwbl1JeQm&access_token=805f6c37fa1eb7e50c2507cbe7128280&sesskey=202304093.236.66.167");
 curl_setopt($ch4, CURLOPT_COOKIEJAR, "cookie1.txt");
 curl_setopt($ch4, CURLOPT_COOKIEFILE, "cookie1.txt");
@@ -51,14 +51,12 @@ curl_setopt($ch4, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch4, CURLOPT_VERBOSE, 1);
 
 $ch5 = curl_init();
-curl_setopt($ch5, CURLOPT_HEADER, 1);
-curl_setopt($ch5, CURLOPT_NOBODY, 1);
-curl_setopt($ch5, CURLOPT_URL, "https://dewafortune.xyz/bq2.php");
+curl_setopt($ch5, CURLOPT_HEADER, 0);
+curl_setopt($ch5, CURLOPT_NOBODY, 0);
+curl_setopt($ch5, CURLOPT_URL, "https://dewafortune.xyz/var_api.php");
 curl_setopt($ch5, CURLOPT_COOKIEFILE, "cookie1.txt");
 curl_setopt($ch5, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch5, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch5, CURLOPT_POST, 1);
-curl_setopt($ch5, CURLOPT_POSTFIELDS, "resres=bda9643ac6601722a28f238714274da4&res=bda9643ac6601722a28f238714274da4");
+curl_setopt($ch5, CURLOPT_VERBOSE, 1);
 
 $mh = curl_multi_init();
 //curl_multi_add_handle($mh, $ch);
