@@ -49,7 +49,7 @@ do {
 //$a = curl_multi_getcontent($ch);
 $b = curl_multi_getcontent($ch2);
 $c = curl_multi_getcontent($ch3);
-curl_multi_remove_handle($mh, $ch);
+//curl_multi_remove_handle($mh, $ch);
 curl_multi_remove_handle($mh, $ch2);
 curl_multi_remove_handle($mh, $ch3);
 curl_multi_close($mh);
