@@ -32,3 +32,14 @@ curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch3, CURLOPT_VERBOSE, 1);
 curl_exec($ch3);
 curl_close($ch3);
+
+$ch4 = curl_init();
+curl_setopt($ch4, CURLOPT_URL, "https://dewafortune.xyz/bq2.php");
+curl_setopt($ch4, CURLOPT_COOKIEFILE, "cookie1.txt");
+curl_setopt($ch4, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "resres=bda9643ac6601722a28f238714274da4&res=bda9643ac6601722a28f238714274da4");
+curl_setopt($ch4, CURLOPT_VERBOSE, 1);
+curl_exec($ch4);
+curl_close($ch4);
