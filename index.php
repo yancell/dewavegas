@@ -1,8 +1,6 @@
 <?php
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_HEADER, 0);
-curl_setopt($ch, CURLOPT_NOBODY, 1);
 curl_setopt($ch, CURLOPT_URL, "https://dwvgs.club/loginUser");
 curl_setopt($ch, CURLOPT_COOKIEJAR, "cookie.txt");
 curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie.txt");
