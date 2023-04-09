@@ -27,7 +27,7 @@ curl_setopt($ch2, CURLOPT_VERBOSE, 1);
 $ch3 = curl_init();
 curl_setopt($ch3, CURLOPT_HEADER, false);
 curl_setopt($ch3, CURLOPT_NOBODY, false);
-curl_setopt($ch3, CURLOPT_URL, "https://dewafortune.xyz/wheel.php");
+curl_setopt($ch3, CURLOPT_URL, "https://dewafortune.xyz/var_api.php");
 curl_setopt($ch3, CURLOPT_COOKIEFILE, "cookie.txt");
 curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
 //curl_setopt($ch3, CURLOPT_CUSTOMREQUEST, "POST");
