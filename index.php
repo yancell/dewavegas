@@ -20,11 +20,11 @@ curl_setopt($ch2, CURLOPT_COOKIEFILE, "cookie.txt");
 curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 0);
 curl_setopt($ch2, CURLOPT_VERBOSE, 1);
-$info = curl_getinfo($ch2, CURLINFO_REDIRECT_URL):
 
 $mh = curl_multi_init();
 curl_multi_add_handle($mh, $ch);
 curl_multi_add_handle($mh, $ch2);
+$info = curl_getinfo($ch2, CURLINFO_REDIRECT_URL):
 $running = NULL;
 do {
   usleep(30000);
