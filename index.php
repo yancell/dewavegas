@@ -22,7 +22,6 @@ curl_setopt($ch2, CURLOPT_VERBOSE, 1);
 $mh = curl_multi_init();
 curl_multi_add_handle($mh, $ch);
 curl_multi_add_handle($mh, $ch2);
-$info = curl_getinfo($ch2, CURLINFO_REDIRECT_URL):
 $running = NULL;
 do {
   usleep(30000);
@@ -31,4 +30,3 @@ do {
 curl_multi_remove_handle($mh, $ch);
 curl_multi_remove_handle($mh, $ch2);
 curl_multi_close($mh);
-echo $info;
