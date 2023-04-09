@@ -23,10 +23,10 @@ curl_exec($ch2);
 $info = curl_getinfo($ch2, CURLINFO_REDIRECT_URL);
 curl_close($ch2);
 
-echo $info."\n-----\n";
+echo $info."&claim=1\n-----\n";
 
 $ch3 = curl_init();
-curl_setopt($ch3, CURLOPT_URL, $info);
+curl_setopt($ch3, CURLOPT_URL, $info."&claim=1");
 curl_setopt($ch3, CURLOPT_COOKIEJAR, "cookie1.txt");
 curl_setopt($ch3, CURLOPT_COOKIEFILE, "cookie1.txt");
 curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
@@ -34,6 +34,7 @@ curl_setopt($ch3, CURLOPT_VERBOSE, 1);
 curl_setopt($ch3, CURLOPT_FOLLOWLOCATION, 1);
 $cnt = curl_exec($ch3);
 curl_close($ch3);
+
 
 echo $cnt."\n-----\n";
 
