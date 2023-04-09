@@ -1,5 +1,0 @@
-# File Cookie HTTP Netscape
-# https://curl.se/docs/http-cookies.html
-# File ini dihasilkan oleh libcurl! Edit dengan risiko Anda sendiri.
-
-dewafortune.xyz FALSE / FALSE 0 PHPSESSID dheqar2fln8ibl9cq6apovu2u9
