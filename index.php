@@ -51,8 +51,8 @@ curl_setopt($ch4, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch4, CURLOPT_VERBOSE, 1);
 **/
 $ch5 = curl_init();
-curl_setopt($ch5, CURLOPT_HEADER, false);
-curl_setopt($ch5, CURLOPT_NOBODY, false);
+curl_setopt($ch5, CURLOPT_HEADER, 1);
+curl_setopt($ch5, CURLOPT_NOBODY, 1);
 curl_setopt($ch5, CURLOPT_URL, "https://dewafortune.xyz/bq2.php");
 curl_setopt($ch5, CURLOPT_COOKIEFILE, "cookie1.txt");
 curl_setopt($ch5, CURLOPT_RETURNTRANSFER, 1);
