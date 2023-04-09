@@ -27,12 +27,22 @@ echo $info."\n-----\n";
 
 $ch3 = curl_init();
 curl_setopt($ch3, CURLOPT_URL, $info);
-curl_setopt($ch3, CURLOPT_COOKIEJAR, "cookie1.txt");
 curl_setopt($ch3, CURLOPT_COOKIEFILE, "cookie1.txt");
 curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch3, CURLOPT_VERBOSE, 1);
 curl_setopt($ch3, CURLOPT_FOLLOWLOCATION, 1);
 $cnt = curl_exec($ch3);
 curl_close($ch3);
+
+echo $cnt."\n-----\n";
+
+$ch4 = curl_init();
+curl_setopt($ch4, CURLOPT_URL, "https://dewafortune.xyz/var.api.php");
+curl_setopt($ch4, CURLOPT_COOKIEFILE, "cookie1.txt");
+curl_setopt($ch4, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch4, CURLOPT_VERBOSE, 1);
+curl_setopt($ch4, CURLOPT_FOLLOWLOCATION, 1);
+$cnt = curl_exec($ch4);
+curl_close($ch4);
 
 echo $cnt."\n-----\n";
