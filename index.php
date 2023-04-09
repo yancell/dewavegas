@@ -16,7 +16,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, "username=DAHYANI&password=cikande1");
 curl_setopt($ch, CURLOPT_VERBOSE, 1);
 **/
 $ch2 = curl_init();
-curl_setopt($ch2, CURLOPT_HEADER, 0);
+curl_setopt($ch2, CURLOPT_HEADER, 1);
 curl_setopt($ch2, CURLOPT_NOBODY, 1);
 curl_setopt($ch2, CURLOPT_URL, "https://dwvgs.club/dewafortune/DAHYANI");
 curl_setopt($ch2, CURLOPT_COOKIEFILE, "cookie.txt");
