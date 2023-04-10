@@ -48,5 +48,4 @@ $cnt = str_replace('src="js/', 'src="https://dewafortune.xyz/js/', $cnt);
 $cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
 $cnt = str_replace('images/', 'https://dewafortune.xyz/images/', $cnt);
 $cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 1;', $cnt);
-$cnt = str_replace('var announcActive = 0;', 'var announcActive = 1;', $cnt);
 echo $cnt;
