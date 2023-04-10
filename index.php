@@ -12,8 +12,6 @@ curl_setopt($ch, CURLOPT_VERBOSE, 1);
 curl_exec($ch);
 curl_close($ch);
 
-sleep(20);
-
 $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_HEADER, 1);
 curl_setopt($ch2, CURLOPT_NOBODY, 1);
@@ -35,8 +33,6 @@ curl_setopt($ch3, CURLOPT_FOLLOWLOCATION, 1);
 curl_exec($ch3);
 curl_close($ch3);
 
-sleep(10);
-
 $ch4 = curl_init();
 curl_setopt($ch4, CURLOPT_URL, "https://dewafortune.xyz/var_api.php");
 curl_setopt($ch4, CURLOPT_COOKIEFILE, "cookie1.txt");
@@ -51,5 +47,5 @@ $cnt = str_replace('https://dewafortune.xyz/java/cs-new/CGame-CS.js', 'java/cs-n
 $cnt = str_replace('src="js/', 'src="https://dewafortune.xyz/js/', $cnt);
 $cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
 $cnt = str_replace('images/', 'https://dewafortune.xyz/images/', $cnt);
-$cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 9;', $cnt);
+$cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 1;', $cnt);
 echo $cnt;
