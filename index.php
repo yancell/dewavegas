@@ -44,7 +44,7 @@ curl_close($ch4);
 
 $cnt = str_replace('src="java/', 'src="https://dewafortune.xyz/java/', $cnt);
 $cnt = str_replace('src="js/', 'src="https://dewafortune.xyz/js/', $cnt);
-$cnt = str_replace('css/', 'src="https://dewafortune.xyz/css/', $cnt);
-$cnt = str_replace('images/', 'src="https://dewafortune.xyz/images/', $cnt);
+$cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
+$cnt = str_replace('images/', 'https://dewafortune.xyz/images/', $cnt);
 $cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 9;', $cnt);
 echo $cnt;
