@@ -1,3 +1,5 @@
+<?php
+
 $resres = !empty($_REQUEST["resres"]) ? $_REQUEST["resres"] : "";
 $res = !empty($_REQUEST["res"]) ? $_REQUEST["res"] : "";
 $ch = curl_init();
