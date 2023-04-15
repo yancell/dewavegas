@@ -130,7 +130,7 @@ function CGame(oData){
                 var res = KASCKLNALKCN[_iCurWin];
                 $.ajax({
                     type: "POST",
-                    url: 'https://dewafortune.xyz/bq2.php',
+                    url: 'bq2.php',
                     data: {resres: resres, res: res},
                     success: function(data)
                     {   
