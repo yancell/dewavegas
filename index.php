@@ -43,7 +43,6 @@ $cnt = curl_exec($ch4);
 curl_close($ch4);
 
 $cnt = str_replace('src="java/', 'src="https://dewafortune.xyz/java/', $cnt);
-$cnt = str_replace('https://dewafortune.xyz/java/cs-new/CGame-CS.js', 'java/cs-new/CGame-CS.js', $cnt);
 $cnt = str_replace('src="js/', 'src="https://dewafortune.xyz/js/', $cnt);
 $cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
 $cnt = str_replace('images/', 'https://dewafortune.xyz/images/', $cnt);
