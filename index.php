@@ -11,7 +11,6 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, "username=DAHYANI&password=cikande1");
 curl_setopt($ch, CURLOPT_VERBOSE, 1);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_HEADER, 1);
-curl_setopt($ch, CURLOPT_NOBODY, 1);
 $cnt = curl_exec($ch);
 curl_close($ch);
 
