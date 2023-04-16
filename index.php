@@ -19,4 +19,4 @@ foreach($matches[1] as $item) {
     parse_str($item, $cookie);
     $cookies = array_merge($cookies, $cookie);
 }
-var_dump($cookies);
+print_r($cookies);
