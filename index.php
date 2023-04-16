@@ -10,8 +10,13 @@ curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, "username=DAHYANI&password=cikande1");
 curl_setopt($ch, CURLOPT_VERBOSE, 1);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_COOKIELIST);
+curl_setopt($ch, CURLOPT_HEADER, 1);
+$result = curl_exec($ch);
 curl_close($ch);
-
-print_r($info);
+preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $result, $matches);
+$cookies = array();
+foreach($matches[1] as $item) {
+    parse_str($item, $cookie);
+    $cookies = array_merge($cookies, $cookie);
+}
+var_dump($cookies);
