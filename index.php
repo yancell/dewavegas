@@ -10,8 +10,8 @@ curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, "username=DAHYANI&password=cikande1");
 curl_setopt($ch, CURLOPT_VERBOSE, 1);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt($ch, CURLOPT_HEADER, 1);
-$cnt = curl_exec($ch);
+curl_exec($ch);
+$info = curl_getinfo($ch, CURLINFO_COOKIELIST);
 curl_close($ch);
 
-echo $cnt;
+echo $info;
