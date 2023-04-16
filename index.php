@@ -31,6 +31,14 @@ curl_exec($ch2);
 $info = curl_getinfo($ch2, CURLINFO_REDIRECT_URL);
 curl_close($ch2);
 
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://dwvgs.club/");
+curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie.txt");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 1);
+curl_exec($ch);
+curl_close($ch);
+
 $ch3 = curl_init();
 curl_setopt($ch3, CURLOPT_URL, $info);
 curl_setopt($ch3, CURLOPT_COOKIEJAR, "cookie1.txt");
