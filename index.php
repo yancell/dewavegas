@@ -30,7 +30,7 @@ curl_setopt($ch2, CURLOPT_VERBOSE, 1);
 curl_exec($ch2);
 $info = curl_getinfo($ch2, CURLINFO_REDIRECT_URL);
 curl_close($ch2);
-echo $info:
+echo $info;
 
 $ch3 = curl_init();
 curl_setopt($ch3, CURLOPT_URL, $info);
