@@ -14,4 +14,4 @@ curl_exec($ch);
 $info = curl_getinfo($ch, CURLINFO_COOKIELIST);
 curl_close($ch);
 
-echo $info;
+print_r($info);
