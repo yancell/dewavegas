@@ -50,6 +50,7 @@ $cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
 $cnt = str_replace('images/', 'https://dewafortune.xyz/images/', $cnt);
 $cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 1;', $cnt);
 //$cnt = str_replace($value, '[0, 0,0,7, 0,0, 0, 0, 0, 0,0, 0, 0, 7,0,0,0,0,0,0]', $cnt);
+$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 0, 1, 0,0, 0, 0, 0,0,0,0,0,0,1]', $cnt);
 
 echo $cnt;
 
