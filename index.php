@@ -42,7 +42,7 @@ curl_setopt($ch4, CURLOPT_FOLLOWLOCATION, 1);
 $cnt = curl_exec($ch4);
 curl_close($ch4);
 
-//$value = cut($cnt, 'klanklcnaklasdac:',',anim');
+$value = cut($cnt, 'klanklcnaklasdac:',',anim');
 
 $cnt = str_replace('src="java/', 'src="https://dewafortune.xyz/java/', $cnt);
 $cnt = str_replace('src="js/', 'src="https://dewafortune.xyz/js/', $cnt);
