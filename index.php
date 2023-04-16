@@ -30,7 +30,6 @@ curl_setopt($ch2, CURLOPT_VERBOSE, 1);
 curl_exec($ch2);
 $info = curl_getinfo($ch2, CURLINFO_REDIRECT_URL);
 curl_close($ch2);
-echo $info;
 
 $ch3 = curl_init();
 curl_setopt($ch3, CURLOPT_URL, $info);
@@ -41,7 +40,7 @@ curl_setopt($ch3, CURLOPT_VERBOSE, 1);
 curl_setopt($ch3, CURLOPT_FOLLOWLOCATION, 1);
 curl_exec($ch3);
 curl_close($ch3);
-
+sleep(10);
 $ch4 = curl_init();
 curl_setopt($ch4, CURLOPT_URL, "https://dewafortune.xyz/var_api.php");
 curl_setopt($ch4, CURLOPT_COOKIEFILE, "cookie1.txt");
