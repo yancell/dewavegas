@@ -39,7 +39,7 @@ curl_exec($ch3);
 curl_close($ch3);
 
 $ch3 = curl_init();
-curl_setopt($ch3, CURLOPT_URL, ”https://dewafortune.xyz/auth/select_game_v2.php");
+curl_setopt($ch3, CURLOPT_URL, "https://dewafortune.xyz/auth/select_game_v2.php");
 curl_setopt($ch3, CURLOPT_COOKIEFILE, "cookie1.txt");
 curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch3, CURLOPT_VERBOSE, 1);
