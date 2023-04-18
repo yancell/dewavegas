@@ -11,3 +11,4 @@ curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, 'resres='.$resres.'&res='.$res);
 curl_exec($ch);
 curl_close($ch);
+
