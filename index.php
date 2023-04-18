@@ -55,9 +55,10 @@ $value = cut($cnt, 'klanklcnaklasdac:',',anim');
 $cnt = str_replace('src="java/', 'src="https://dewafortune.xyz/java/', $cnt);
 $cnt = str_replace('src="js/', 'src="https://dewafortune.xyz/js/', $cnt);
 $cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
-$cnt = str_replace('images/', 'https://dewafortune.xyz/images/', $cnt);
+$cnt = str_replace('src="images/', 'src="https://dewafortune.xyz/images/', $cnt);
 $cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 1;', $cnt);
-$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 0, 90, 0,0, 0, 0, 0,0,0,0,0,90,0]', $cnt);
+$cnt = str_replace('socket.io.js"', 'socket.io.js"  crossorigin="use-credentials"', $cnt);
+//$cnt = str_replace($value, '[0, 11,0,0, 0,0, 0, 0, 0, 0,0, 11, 0, 0,0,0,0,0,0,0]', $cnt);
 
 echo $cnt;
 
