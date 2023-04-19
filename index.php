@@ -59,6 +59,13 @@ $cnt = str_replace('src="images/', 'src="https://dewafortune.xyz/images/', $cnt)
 $cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 1;', $cnt);
 $cnt = str_replace('socket.io.js"', 'socket.io.js"  crossorigin="use-credentials"', $cnt);
 //$cnt = str_replace($value, '[0, 10,20,35, 0,50, 75, 100, 250, 50,0, 10, 20, 35,0,50,75,100,250,50]', $cnt);
+//$cnt = str_replace($value, '[0, 10,0,0, 0,0, 0, 0, 0, 0,0, 10, 0, 0,0,0,0,0,0,0]', $cnt);
+//$cnt = str_replace($value, '[0, 0,20,0, 0,0, 0, 0, 0, 0,0, 0, 20, 0,0,0,0,0,0,0]', $cnt);
+//$cnt = str_replace($value, '[0, 0,0,35, 0,0, 0, 0, 0, 0,0, 0, 0, 35,0,0,0,0,0,0]', $cnt);
+//$cnt = str_replace($value, '[0, 0,0,0, 0,50, 0, 0, 0, 50,0, 0, 0, 0,0,50,0,0,0,50]', $cnt);
+//$cnt = str_replace($value, '[0, 0,0,0, 0,0, 75, 0, 0, 0,0, 0, 0, 0,0,0,75,0,0,0]', $cnt);
+//$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 100, 0, 0,0, 0, 0, 0,0,0,0,100,0,0]', $cnt);
+//$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 0, 250, 0,0, 0, 0, 0,0,0,0,0,250,0]', $cnt);
 
 echo $cnt;
 
