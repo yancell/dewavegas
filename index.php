@@ -64,7 +64,7 @@ $cnt = str_replace('socket.io.js"', 'socket.io.js"  crossorigin="use-credentials
 //$cnt = str_replace($value, '[0, 0,0,35, 0,0, 0, 0, 0, 0,0, 0, 0, 35,0,0,0,0,0,0]', $cnt);
 //$cnt = str_replace($value, '[0, 0,0,0, 0,50, 0, 0, 0, 50,0, 0, 0, 0,0,50,0,0,0,50]', $cnt);
 //$cnt = str_replace($value, '[0, 0,0,0, 0,0, 75, 0, 0, 0,0, 0, 0, 0,0,0,75,0,0,0]', $cnt);
-//$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 100, 0, 0,0, 0, 0, 0,0,0,0,100,0,0]', $cnt);
+$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 100, 0, 0,0, 0, 0, 0,0,0,0,100,0,0]', $cnt);
 //$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 0, 250, 0,0, 0, 0, 0,0,0,0,0,250,0]', $cnt);
 
 echo $cnt;
