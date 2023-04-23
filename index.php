@@ -57,7 +57,7 @@ $cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
 $cnt = str_replace('src="images/', 'src="https://dewafortune.xyz/images/', $cnt);
 $cnt = str_replace('socket.io.js"', 'socket.io.js"  crossorigin="use-credentials"', $cnt);
 $cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 1;', $cnt);
-$cnt = str_replace($value, '[0, 0,0,35, 0,0, 0, 0, 0, 0,0, 0, 0, 35,0,0,0,0,0,0]', $cnt);
+$cnt = str_replace($value, '[0, 0,20,0, 0,0, 0, 0, 0, 0,0, 0, 20, 0,0,0,0,0,0,0]', $cnt);
 
 echo $cnt;
 
