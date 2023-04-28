@@ -53,6 +53,7 @@ $cnt = curl_exec($ch4);
 curl_close($ch4);
 
 $value = cut($cnt, 'klanklcnaklasdac:',',anim');
+$red = cut($cnt, "var rturl = '","';");
 
 $cnt = str_replace('src="java/', 'src="https://dewafortune.xyz/java/', $cnt);
 $cnt = str_replace('src="js/', 'src="https://dewafortune.xyz/js/', $cnt);
@@ -60,7 +61,7 @@ $cnt = str_replace('css/', 'https://dewafortune.xyz/css/', $cnt);
 $cnt = str_replace('src="images/', 'src="https://dewafortune.xyz/images/', $cnt);
 $cnt = str_replace('socket.io.js"', 'socket.io.js"  crossorigin="use-credentials"', $cnt);
 $cnt = str_replace('var numb_kupn = 0;', 'var numb_kupn = 1;', $cnt);
-$cnt = str_replace($value, '[0, 0,0,0, 0,0, 0, 0, 1, 0,0, 0, 0, 0,0,0,0,0,1,0]', $cnt);
+$cnt = str_replace($red, base64_encode('https://'.$_SERVER['HTTP_HOST']), $cnt);
 
 echo $cnt;
 
