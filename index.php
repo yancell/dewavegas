@@ -10,6 +10,9 @@
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script>
 			$(document).ready(function(){
+				login();
+			});
+			function login(){
 				$.ajax({
 					type: "POST",
 					url: 'login.php',
@@ -19,12 +22,16 @@
 						setInterval(display, 5000);
 					}
 				});
-			});
+			}
 			function display(){
 				$.ajax({
 					type: "POST",
 					url: 'wheal.php',
 					success: function(data){
+						if (data == ''){
+							clearInterval(display);
+							login();
+						}
 						console.log(data);
 						$('#data').prepend('<p>'+data+'</p>');
 					}
