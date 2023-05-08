@@ -13,6 +13,7 @@
 				login();
 			});
 			function login(){
+				$('#data').prepend('<p>Menghubungkan/p>');
 				$.ajax({
 					type: "POST",
 					url: 'login.php',
@@ -29,6 +30,7 @@
 					url: 'wheal.php',
 					success: function(data){
 						if (data == ''){
+							$('#data').prepend('<p>Terputus</p>');
 							clearInterval(display);
 							login();
 						}
