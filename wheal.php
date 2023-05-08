@@ -12,7 +12,10 @@ $value = cut($cnt, 'klanklcnaklasdac:',',anim');
 $arr = json_decode($value);
 
 foreach ($arr as $k => $v){
-	if (!empty($v)) echo $var[$k];
+	if (!empty($v)){
+		echo $var[$k];
+		break;
+	}
 }
 
 function cut($html, $start, $end){
