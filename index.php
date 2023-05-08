@@ -16,7 +16,7 @@
 					success: function(data){
 						console.log(data);
 						$('#data').prepend('<p>'+data+'</p>');
-						setInterval(display, 1000);
+						setInterval(display, 5000);
 					}
 				});
 			});
