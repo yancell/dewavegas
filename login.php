@@ -2,8 +2,8 @@
 
 @unlink("cookie.txt");
 @unlink("cookie1.txt");
-$user = "DEWAMESUM";
-$pass = "mesummesum1";
+$user = "DAHYANI";
+$pass = "cikande1";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://dwvgs.club/loginUser");
 curl_setopt($ch, CURLOPT_COOKIEJAR, "cookie.txt");
