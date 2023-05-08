@@ -13,7 +13,7 @@
 				login();
 			});
 			function login(){
-				$('#data').prepend('<p>Menghubungkan/p>');
+				$('#data').prepend('<p>Menghubungkan</p>');
 				$.ajax({
 					type: "POST",
 					url: 'login.php',
