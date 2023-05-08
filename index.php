@@ -16,9 +16,20 @@
 					success: function(data){
 						console.log(data);
 						$('#data').prepend('<p>'+data+'</p>');
+						setInterval(display, 1000);
 					}
 				});
 			});
+			function display(){
+				$.ajax({
+					type: "POST",
+					url: 'wheal.php',
+					success: function(data){
+						console.log(data);
+						$('#data').prepend('<p>'+data+'</p>');
+					}
+				});
+			}
 		</script>
 	</body>
 </html>
