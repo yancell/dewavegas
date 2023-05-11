@@ -90,7 +90,7 @@
 							login();
 						}
 						if (action.indexOf(data) != -1){
-							clearInterval(display);
+							clearInterval(myInterval);
 							$('input[type="submit"]').attr('value', 'START');
 							alert("Target terpenuhi");
 						}
