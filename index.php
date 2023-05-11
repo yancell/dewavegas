@@ -21,6 +21,9 @@
 				<option value="100000">100000</option>
 				<option value="75000">75000</option>
 				<option value="50000">50000</option>
+				<option value="35000">35000</option>
+				<option value="20000">20000</option>
+				<option value="10000">10000</option>
 			</select>
 			<input type="submit" value="START">
 		</form>
