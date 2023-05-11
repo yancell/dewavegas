@@ -29,9 +29,10 @@
 		<script>
 			function ok(){
 				var start = $('input[type="submit"]').val();
+				alert(start);
 				if (start == 'STOP'){
 					$('input[type="submit"]').attr('value', 'START');
-					clearInterval(display);
+					clearInterval(myInterval);
 					return;
 				}
 				$('input[type="submit"]').attr('value', 'STOP');
@@ -67,7 +68,7 @@
 							return;
 						}
 						$('#data').prepend('<p>'+data+'</p>');
-						setInterval(display, 5000);
+						myInterval = setInterval(display, 5000);
 					}
 				});
 			}
@@ -83,7 +84,7 @@
 					},
 					success: function(data){
 						if (data == ''){
-							clearInterval(display);
+							clearInterval(myInterval);
 							login();
 						}
 						if (action.indexOf(data) != -1){
