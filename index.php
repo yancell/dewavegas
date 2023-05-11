@@ -29,7 +29,6 @@
 		<script>
 			function ok(){
 				var start = $('input[type="submit"]').val();
-				alert(start);
 				if (start == 'STOP'){
 					$('input[type="submit"]').attr('value', 'START');
 					clearInterval(myInterval);
