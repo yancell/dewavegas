@@ -65,7 +65,7 @@
 							$('input[type="submit"]').attr('value', 'START');
 							return;
 						}
-						if (data == 'true'){
+						if (data == '1'){
 							$('input[type="submit"]').attr('value', 'START');
 							alert("Target terpenuhi");
 							return;
