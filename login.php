@@ -3,7 +3,7 @@
 	require_once("config.php");
 
 	$ch1 = curl_init();
-	curl_setopt($ch1, CURLOPT_URL, "https://dwvgs.club/loginUser");
+	curl_setopt($ch1, CURLOPT_URL, "https://dwvgs.biz/loginUser");
 	curl_setopt($ch1, CURLOPT_COOKIEJAR, "cookie".$user.".txt");
 	curl_setopt($ch1, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch1, CURLOPT_CUSTOMREQUEST, "POST");
@@ -13,7 +13,7 @@
 	curl_close($ch1);
 
 	$ch2 = curl_init();
-	curl_setopt($ch2, CURLOPT_URL, "https://dwvgs.club/");
+	curl_setopt($ch2, CURLOPT_URL, "https://dwvgs.biz/");
 	curl_setopt($ch2, CURLOPT_COOKIEFILE, "cookie".$user.".txt");
 	curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
 	curl_exec($ch2);
@@ -22,7 +22,7 @@
 	$ch3 = curl_init();
 	curl_setopt($ch3, CURLOPT_HEADER, 1);
 	curl_setopt($ch3, CURLOPT_NOBODY, 1);
-	curl_setopt($ch3, CURLOPT_URL, "https://dwvgs.club/dewafortune/".$user);
+	curl_setopt($ch3, CURLOPT_URL, "https://dwvgs.biz/dewafortune/".$user);
 	curl_setopt($ch3, CURLOPT_COOKIEFILE, "cookie".$user.".txt");
 	curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
 	curl_exec($ch3);
