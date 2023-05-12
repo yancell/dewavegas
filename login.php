@@ -2,6 +2,7 @@
 
 	require_once("config.php");
 
+	echo $user;
 	$ch1 = curl_init();
 	curl_setopt($ch1, CURLOPT_URL, "https://dwvgs.club/loginUser");
 	curl_setopt($ch1, CURLOPT_COOKIEJAR, "cookie".$user.".txt");
@@ -9,9 +10,8 @@
 	curl_setopt($ch1, CURLOPT_CUSTOMREQUEST, "POST");
 	curl_setopt($ch1, CURLOPT_POST, 1);
 	curl_setopt($ch1, CURLOPT_POSTFIELDS, "username=".$user."&password=".$password);
-	$cnt = curl_exec($ch1);
+	curl_exec($ch1);
 	curl_close($ch1);
-	echo $cnt;
 
 	$ch2 = curl_init();
 	curl_setopt($ch2, CURLOPT_URL, "https://dwvgs.club/");
