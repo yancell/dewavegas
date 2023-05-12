@@ -36,12 +36,12 @@
 	curl_exec($ch3);
 	curl_close($ch3);
 
-	$ch4 = curl_init();
-	curl_setopt($ch4, CURLOPT_URL, "https://dewafortune.xyz/auth/select_game_v2.php");
-	curl_setopt($ch4, CURLOPT_COOKIEFILE, "cookie1".$user.".txt");
-	curl_setopt($ch4, CURLOPT_RETURNTRANSFER, 1);
-	curl_exec($ch4);
-	curl_close($ch4);
+	$ch3 = curl_init();
+	curl_setopt($ch3, CURLOPT_URL, "https://dewafortune.xyz/auth/select_game_v2.php");
+	curl_setopt($ch3, CURLOPT_COOKIEFILE, "cookie1".$user.".txt");
+	curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1);
+	curl_exec($ch3);
+	curl_close($ch3);
 
 	$ch5 = curl_init();
 	curl_setopt($ch5, CURLOPT_URL, "https://dewafortune.xyz/var_api.php");
