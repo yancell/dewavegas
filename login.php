@@ -55,6 +55,28 @@
 	$arr = json_decode($value);
 	
 	if (is_array($arr)){
+		if (!is_array($target)){
+			$key = array_search($target, $var);
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, "https://dewafortune.xyz/bq1.php");
+			curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie1".$user.".txt");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_POST, 1);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, 'resres='.$res[$key].'&res='.$res[$key]);
+			curl_exec($ch);
+			curl_close($ch);
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, "https://dewafortune.xyz/bq2.php");
+			curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie1".$user.".txt");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_POST, 1);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, 'resres='.$res[$key].'&res='.$res[$key]);
+			curl_exec($ch);
+			curl_close($ch);
+			return;
+		}
 		foreach ($arr as $k => $v){
 			if (!empty($v)){
 				echo $var[$k];
