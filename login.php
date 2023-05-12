@@ -50,7 +50,7 @@
 	curl_setopt($ch6, CURLOPT_FOLLOWLOCATION, 1);
 	$cnt = curl_exec($ch6);
 	curl_close($ch6);
-	
+	echo $cnt;
 	$value = cut($cnt, 'klanklcnaklasdac:',',anim');
 	$arr = json_decode($value);
 	
