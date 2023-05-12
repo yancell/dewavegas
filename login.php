@@ -2,7 +2,6 @@
 
 	require_once("config.php");
 
-	echo $user;
 	$ch1 = curl_init();
 	curl_setopt($ch1, CURLOPT_URL, "https://dwvgs.club/loginUser");
 	curl_setopt($ch1, CURLOPT_COOKIEJAR, "cookie".$user.".txt");
