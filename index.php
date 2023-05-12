@@ -60,6 +60,7 @@
 						val: action
 					},
 					success: function(data){
+						console.log(data);
 						if (data == ''){
 							$('input[type="submit"]').attr('value', 'START');
 							return;
@@ -85,6 +86,7 @@
 						val: action
 					},
 					success: function(data){
+						console.log(data);
 						if (data == ''){
 							clearInterval(myInterval);
 							login();
@@ -94,7 +96,6 @@
 							$('input[type="submit"]').attr('value', 'START');
 							alert("Target terpenuhi");
 						}
-						console.log(data);
 						$('#data').prepend('<p>'+data+'</p>');
 					}
 				});
