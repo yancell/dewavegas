@@ -9,8 +9,9 @@
 	curl_setopt($ch1, CURLOPT_CUSTOMREQUEST, "POST");
 	curl_setopt($ch1, CURLOPT_POST, 1);
 	curl_setopt($ch1, CURLOPT_POSTFIELDS, "username=".$user."&password=".$password);
-	curl_exec($ch1);
+	$cnt = curl_exec($ch1);
 	curl_close($ch1);
+	echo $cnt;
 
 	$ch2 = curl_init();
 	curl_setopt($ch2, CURLOPT_URL, "https://dwvgs.club/");
@@ -50,7 +51,7 @@
 	curl_setopt($ch6, CURLOPT_FOLLOWLOCATION, 1);
 	$cnt = curl_exec($ch6);
 	curl_close($ch6);
-	echo $cnt;
+	
 	$value = cut($cnt, 'klanklcnaklasdac:',',anim');
 	$arr = json_decode($value);
 	
