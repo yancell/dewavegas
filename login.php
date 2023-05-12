@@ -28,7 +28,7 @@
 	curl_exec($ch3);
 	$info = curl_getinfo($ch3, CURLINFO_REDIRECT_URL);
 	curl_close($ch3);
-
+echo $info;
 	$ch4 = curl_init();
 	curl_setopt($ch4, CURLOPT_URL, $info);
 	curl_setopt($ch4, CURLOPT_COOKIEJAR, "cookie1".$user.".txt");
