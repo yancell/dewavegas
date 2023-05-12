@@ -75,6 +75,7 @@
 			curl_setopt($ch, CURLOPT_POSTFIELDS, 'resres='.$res[$key].'&res='.$res[$key]);
 			curl_exec($ch);
 			curl_close($ch);
+			echo true;
 			return;
 		}
 		foreach ($arr as $k => $v){
