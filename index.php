@@ -70,6 +70,13 @@
 							alert("Target terpenuhi");
 							return;
 						}
+						if (action.indexOf(data) != -1){
+							$('input[type="submit"]').attr('value', 'START');
+							alert("Target terpenuhi");
+
+	
+							return;
+							}
 						$('#data').prepend('<p>'+data+'</p>');
 						myInterval = setInterval(display, 5000);
 					}
