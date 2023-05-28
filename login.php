@@ -83,7 +83,8 @@ if ($key != NULL){
 		foreach ($arr as $k => $v){
 			if (!empty($v)){
 				echo $var[$k];
-				if (in_array($var[$k], $target)){
+$tar = is_array($target) ? $target : [];
+				if (in_array($var[$k], $tar)){
 					$ch = curl_init();
 					curl_setopt($ch, CURLOPT_URL, "https://dewafortune.xyz/bq2.php");
 					curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie1".$user.".txt");
