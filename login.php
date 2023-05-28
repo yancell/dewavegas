@@ -57,6 +57,7 @@
 	if (is_array($arr)){
 		if (!is_array($target)){
 			$key = array_search($target, $var);
+if ($key != NULL){
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL, "https://dewafortune.xyz/bq1.php");
 			curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie1".$user.".txt");
@@ -77,6 +78,7 @@
 			curl_close($ch);
 			echo true;
 			return;
+}
 		}
 		foreach ($arr as $k => $v){
 			if (!empty($v)){
