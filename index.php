@@ -54,7 +54,7 @@
 				$.ajax({
 					type: "POST",
 					url: 'login.php',
-                    data: {
+                    			data: {
 						user: user,
 						password: password,
 						val: action
@@ -86,7 +86,7 @@
 				$.ajax({
 					type: "POST",
 					url: 'display.php',
-                    data: {
+                    			data: {
 						user: user,
 						val: action
 					},
