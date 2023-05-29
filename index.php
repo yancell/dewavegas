@@ -38,7 +38,7 @@
 					return;
 				}
 				$('input[type="submit"]').attr('value', 'STOP');
-                login();
+                		login();
 			}
 			function change(obj){
 				var a = $(obj);
@@ -73,10 +73,8 @@
 						if (action.indexOf(data) != -1){
 							$('input[type="submit"]').attr('value', 'START');
 							alert("Target terpenuhi");
-
-	
 							return;
-							}
+						}
 						$('#data').prepend('<p>'+data+'</p>');
 						myInterval = setInterval(display, 5000);
 					}
