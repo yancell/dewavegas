@@ -55,9 +55,9 @@
 	$arr = json_decode($value);
 	
 	if (is_array($arr)){
-		if (!is_array($target)){
-			$key = array_search($target, $var);
-if ($key != NULL){
+		$tar = is_array($target) ? $target : [];
+		$key = array_search($tar, $var);
+		if ($key != NULL){
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL, "https://dewafortune.xyz/bq1.php");
 			curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie1".$user.".txt");
@@ -78,12 +78,10 @@ if ($key != NULL){
 			curl_close($ch);
 			echo true;
 			return;
-}
 		}
 		foreach ($arr as $k => $v){
 			if (!empty($v)){
 				echo $var[$k];
-$tar = is_array($target) ? $target : [];
 				if (in_array($var[$k], $tar)){
 					$ch = curl_init();
 					curl_setopt($ch, CURLOPT_URL, "https://dewafortune.xyz/bq2.php");
