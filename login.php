@@ -55,7 +55,7 @@
 	$arr = json_decode($value);
 	
 	if (is_array($arr)){
-		$tar = is_array($target) ? $target : [];
+		$tar = is_array($target) ? $target : !empty($target) ? $target : [];
 		$key = array_search($tar, $var);
 		if ($key != NULL){
 			$ch = curl_init();
