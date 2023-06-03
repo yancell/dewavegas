@@ -72,7 +72,7 @@
 						var price = parseInt(vl);
 						var pr = price + 1;
 						$(".price").attr("_" + data, pr);
-						vl.html(data + " = " + pr + "x");
+						$(vl).html(data + " = " + pr + "x");
 						console.log(data, vl, pr);
 						if (data == ''){
 							$('input[type="submit"]').attr('value', 'START');
@@ -108,7 +108,7 @@
 						var price = parseInt(vl);
 						var pr = price + 1;
 						$(".price").attr("_" + data, pr);
-						vl.html(data + " = " + pr + "x");
+						$(vl).html(data + " = " + pr + "x");
 						console.log(data, vl, pr);
 						if (data == ''){
 							clearInterval(myInterval);
