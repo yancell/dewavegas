@@ -27,14 +27,14 @@
 			</select>
 			<input type="submit" value="START">
 		</form>
-		<div class="price" _0="0">0 = 0x</div>
-		<div class="price" _10000="0">10k = 0x</div>
-		<div class="price" _20000="0">20k = 0x</div>
-		<div class="price" _35000="0">35k = 0x</div>
-		<div class="price" _50000="0">50k = 0x</div>
-		<div class="price" _75000="0">75k = 0x</div>
-		<div class="price" _100000="0">100k = 0x</div>
-		<div class="price" _250000="0">250k = 0x</div>
+		<div class="price0" data="0">0 = 0x</div>
+		<div class="price10000" data="0">10000 = 0x</div>
+		<div class="price20000" data="0">20000 = 0x</div>
+		<div class="price35000" data="0">35000 = 0x</div>
+		<div class="price50000" data="0">50000 = 0x</div>
+		<div class="price75000" data="0">75000 = 0x</div>
+		<div class="price100000" data="0">100000 = 0x</div>
+		<div class="price250000" data="0">250000 = 0x</div>
 		<div id="data"></div>
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script>
@@ -68,11 +68,11 @@
 						val: action
 					},
 					success: function(data){
-						var vl = $(".price").attr("_" + data);
+						var vl = $(".price" + data).attr("data");
 						var price = parseInt(vl);
 						var pr = price + 1;
-						$(".price").attr("_" + data, pr);
-						$(vl).html(data + " = " + pr + "x");
+						$(".price" + data).attr("data", pr);
+						$(".price" + data).html(data + " = " + pr + "x");
 						console.log(data, vl, pr);
 						if (data == ''){
 							$('input[type="submit"]').attr('value', 'START');
@@ -104,11 +104,11 @@
 						val: action
 					},
 					success: function(data){
-						var vl = $(".price").attr("_" + data);
+						var vl = $(".price" + data).attr("data");
 						var price = parseInt(vl);
 						var pr = price + 1;
-						$(".price").attr("_" + data, pr);
-						$(vl).html(data + " = " + pr + "x");
+						$(".price" + data).attr("data", pr);
+						$(".price" + data).html(data + " = " + pr + "x");
 						console.log(data, vl, pr);
 						if (data == ''){
 							clearInterval(myInterval);
