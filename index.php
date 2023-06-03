@@ -73,7 +73,7 @@
 						var pr = price + 1;
 						$(".price" + data).attr("data", pr);
 						$(".price" + data).html(data + " = " + pr + "x");
-						console.log(data, vl, pr);
+						console.log(data);
 						if (data == ''){
 							$('input[type="submit"]').attr('value', 'START');
 							return;
@@ -109,7 +109,7 @@
 						var pr = price + 1;
 						$(".price" + data).attr("data", pr);
 						$(".price" + data).html(data + " = " + pr + "x");
-						console.log(data, vl, pr);
+						console.log(data);
 						if (data == ''){
 							clearInterval(myInterval);
 							login();
