@@ -16,6 +16,7 @@
 		foreach ($arr as $k => $v){
 			if (!empty($v)){
 				echo $var[$k];
+/**
 				$tar = is_array($target) ? $target : [];
 				if (in_array($var[$k], $tar)){
 					$ch = curl_init();
@@ -28,6 +29,7 @@
 					curl_exec($ch);
 					curl_close($ch);
 				}
+**/
 				break;
 			}
 		}
